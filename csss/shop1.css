@@ -1,0 +1,193 @@
+@import "base.css";
+html {
+    font-size: 100px; }
+
+body {
+    font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px; } }
+
+.head{
+    width: 100%;
+    height: 0.88rem;
+    padding: 0 0.22rem;
+    box-sizing: border-box;
+    font-size: 0.38rem;
+    line-height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0.03rem 0.04rem 0 rgba(41,171,255,0.13);
+}
+.head >span{
+    color: #4ebbfe;
+}
+.head >a{
+    color: #4ebbfe;
+}
+.list{
+    width: 100%;
+    position: absolute;
+    /*不写父元素 相对于整个页面定位*/
+    top: 0.88rem;
+    /*量出来是1.76 但是为了与上面有一点间距所以写大一点*/
+    bottom: 0rem;
+    overflow: hidden;
+    padding: 0 0.22rem;
+    box-sizing: border-box;
+    font-size: 0.38rem;
+}
+.introduce{
+    width: 100%;
+    height: 1.9rem;
+    padding: 0 0.22rem 0 0;
+    box-sizing: content-box;
+    margin-top: 0.3rem;
+    overflow: hidden;
+}
+.introduce a{
+    display: flex;
+    justify-content:space-around;
+    align-content: space-around;
+}
+.introduce .choose{
+    width: 0.24rem;
+    height: 0.24rem;
+    margin-top: 0.8rem;
+    margin-right: 0.1rem;
+    border-radius: 50%;
+    background-color: #e7f6ff;
+}
+.introduce > .choose.hot{
+    background-color:rgba(55,223,116,0.75) ;
+}
+.introduce .image{
+    width: 1.7rem;
+    height: 1.7rem;
+    flex: none;
+    box-shadow: 0px 1px 21px 0px rgba(223, 223, 223, 0.50);
+    border-radius: 0.1rem;
+}
+.commentInfo{
+    flex-grow: 1;
+    padding-top: 0.3rem;
+    padding-left: 0.2rem;
+}
+.introduceinfo{
+    width: 4.98rem;
+    padding-top: 0.3rem;
+    padding-left: 0.2rem;
+}
+.introduceinfo > span > [src]{
+    width: 0.34rem;
+    height: 0.34rem;
+}
+.introduceinfo .right{
+    float: right;
+    margin-right: 0.22rem;
+}
+.introduceinfo > span > i{
+    font-size: 0.24rem;
+    font-style: normal;
+    color:#36a8fe;
+}
+.introduceinfo span:first-child{
+    font-size: 0.30rem;
+    color: rgba(0,0,0,0.6);
+}
+.introduceinfo p:last-child{
+    font-size: 0.26rem;
+    color: #8e9397;
+    margin-top: 0.28rem;
+}
+.bottom{
+    width: 100%;
+    height: 1.09rem;
+    padding: 0 0.22rem;
+    box-sizing: border-box;
+    background: #f1faff;
+    /*line-height: 1.09rem;*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.bottom .word{
+    width: 2.28rem;
+    float: left;
+    
+}
+.word span:first-child{
+    margin-top: 0.22rem;
+    font-size: 0.24rem;
+    color: #3bacfe;
+    padding: 0 0.15rem;
+    position: relative;
+}
+.word span:first-child::before{
+    content: '';
+    position: absolute;
+    width: 0.06rem;
+    height: 0.06rem;
+    left: 0rem;
+    top: 0.14rem;
+    border-radius: 50%;
+    background: #3bacfe;
+}
+.word span:nth-child(2){
+    font-size: 0.36rem;
+    color: #3bacfe;
+}
+.word p{
+    margin-top: 0.12rem;
+    font-size: 0.20rem;
+    color: #3bacfe;
+    padding: 0 0.15rem;
+    position: relative;
+}
+.word p::before{
+    content: '';
+    position: absolute;
+    width: 0.06rem;
+    height: 0.06rem;
+    left: 0rem;
+    top: 0.14rem;
+    border-radius: 50%;
+    background: #3bacfe;
+}
+.quanxuan{
+    position: absolute;
+    left: 0.01rem;
+    bottom: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0.22rem;
+}
+.quanxuan img{
+    width: 0.24rem;
+    height: 0.24rem;
+    margin-right: 0.2rem;
+}
+.quanxuan span:last-child{
+    font-size: 0.24rem;
+    color: #3bacfe;
+}
+
