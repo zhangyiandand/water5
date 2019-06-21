@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no, email=no" />
     <link rel="stylesheet" href="./csss/index.css">
+    <link rel="stylesheet" href="./swiper-4.5.0/dist/css/swiper.min.css">
+    <script src="./swiper-4.5.0/dist/js/swiper.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,9 +17,27 @@
     <span>太原 ﹀</span>
     <a href=""></a>
 </div>
-<div class="banner">
-    <img src="./image/img/banner.png" alt="">
+<div class="banner swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./image/img/banner.png" alt=""></div>
+        <div class="swiper-slide"><img src="./image/img/banner.png" alt=""></div>
+        <div class="swiper-slide"><img src="./image/img/banner.png" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
 </div>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
 <ul class="category">
     <li><a href="./水路综合.html">
         <div src=""><img src="./image/img/l1.png" alt=""></div>
